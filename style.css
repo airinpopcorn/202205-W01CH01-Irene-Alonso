@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Space+Mono&display=swap');
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 120px repeat(5, 75px);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+    background-color: #323b58;
+}
+
+.number{
+    background-color: #87a2ba;
+    border-radius: 35px;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.operator{
+    background-color: #2c4475;
+    border-radius: 35px;
+    margin: 2px;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.screen{
+    grid-column: 1/ -1;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 5px 2px 17px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    background-color: #0F1B26;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+.clear{
+    background-color: #cbadad;
+    border-radius: 35px;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#comma{
+    background-color: #87a2ba;
+    border-radius: 35px;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#screen-number{
+    color: white;
+    font-size: 50px;
+}
+
+#equal-button{
+    background-color: #2c4475;
+    border-radius: 35px;
+    margin: 2px;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
